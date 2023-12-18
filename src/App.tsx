@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Electron React Paint</h1>
-        <button onClick={openPaint}>Open Paint</button>
+        <button onClick={openPaint}>Open Paintttt</button>
       </header>
     </div>
   );
