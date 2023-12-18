@@ -1,23 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+
+
+
 
 function App() {
+  const openPaint = () => {
+    const { exec } = window.require('child_process');
+    exec('mspaint');
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Electron React Paint</h1>
+        <button onClick={openPaint}>Open Paint</button>
       </header>
     </div>
   );
