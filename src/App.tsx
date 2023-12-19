@@ -1,6 +1,6 @@
-import Reactor from "./components/reactor/reactor";
 import styled from "styled-components";
 import Menu from "./components/TopMenu/top_menu";
+import MainSiteView from "./views/main_site";
 
 function App() {
   const openPaint = () => {
@@ -14,8 +14,8 @@ function App() {
         <header className="App-header">
           <Menu></Menu>
           <button onClick={openPaint}>Open Paintttt</button>
-          <Reactor></Reactor>
         </header>
+        <MainSiteView/>
       </div>
     </MainContainer>
   );
